@@ -4,7 +4,7 @@ gradle.build
 ```
 ## Usage
 ```
-java -jar VideoDownloader.jar [filename] [youtube-url]
+java -jar build/libs/LabVideoDownloader-1.0.jar [filename] [youtube-url]
 ```
 
 
