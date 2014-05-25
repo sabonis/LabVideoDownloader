@@ -17,9 +17,10 @@ public class VideoDownloader {
      * @param url
      */
     public void saveVideo(String filename, String url) {
-        FileOutputStream fout = null;
         try {
             BufferedInputStream in = new BufferedInputStream(new URL(url).openStream());
+            FileOutputStream fout = new FileOutputStream(filename);
+
             final byte data[] = new byte[1024];
             int count;
             while ((count = in.read(data, 0, 1024)) != -1) {
